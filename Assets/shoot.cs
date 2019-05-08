@@ -14,8 +14,11 @@ public class shoot : MonoBehaviour
     private WaitForSeconds shotDuration = new WaitForSeconds(0.07f);
     private AudioSource gunAudio;
     private float nextFire;
+    public bool automatic;
 
+    public GameObject ImpactDust;
 
+    
     void Start()
     {
         gunAudio = GetComponent<AudioSource>();
@@ -25,7 +28,7 @@ public class shoot : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && Time.time > nextFire)
+        if ((Input.GetButton("Fire1") && Time.time > nextFire && automatic) || Input.GetButtonDown("Fire1") && Time.time > nextFire && !automatic)
         {
             nextFire = Time.time + fireRate;
 
@@ -37,7 +40,9 @@ public class shoot : MonoBehaviour
 
             if (Physics.Raycast(rayOrigin, fpsCam.transform.forward, out hit, weaponRange))
             {
-             
+
+
+                Instantiate(ImpactDust, hit.point, Quaternion.LookRotation(hit.normal));
 
                 if (hit.rigidbody != null)
                 {

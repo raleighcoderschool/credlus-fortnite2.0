@@ -1,0 +1,50 @@
+# Blender MTL File: 'thanos.blend'
+# Material Count: 4
+
+newmtl M_LRG_JIM_Gauntlet
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump C:\\Users\\coope\\Downloads\\umodel\\UmodelExport\\Game\\Characters\\Player\\Male\\XLarge\\Bodies\\M_XLG_Jim_01\\Textures\\T_M_LRG_JIM_Gauntlet_N.tga
+map_Kd C:\\Users\\coope\\Downloads\\umodel\\UmodelExport\\Game\\Characters\\Player\\Male\\XLarge\\Bodies\\M_XLG_Jim_01\\Textures\\T_M_LRG_JIM_Gauntlet_D.tga
+
+newmtl M_Lrg_Jim_Body
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump C:\\Users\\coope\\Downloads\\umodel\\UmodelExport\\Game\\Characters\\Player\\Male\\XLarge\\Bodies\\M_XLG_Jim_01\\Textures\\T_M_LRG_Jim_Body_n.tga
+map_Kd C:\\Users\\coope\\Downloads\\umodel\\UmodelExport\\Game\\Characters\\Player\\Male\\XLarge\\Bodies\\M_XLG_Jim_01\\Textures\\T_M_LRG_Jim_Body_d.tga
+
+newmtl M_Lrg_Jim_Head
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump C:\\Users\\coope\\Downloads\\umodel\\UmodelExport\\Game\\Characters\\Player\\Male\\XLarge\\Bodies\\M_XLG_Jim_01\\Textures\\T_M_LRG_Jim_Head_n.tga
+map_Kd C:\\Users\\coope\\Downloads\\umodel\\UmodelExport\\Game\\Characters\\Player\\Male\\XLarge\\Bodies\\M_XLG_Jim_01\\Textures\\T_M_LRG_Jim_Head_d.tga
+
+newmtl M_Lrg_Jim_Helmet
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump C:\\Users\\coope\\Downloads\\umodel\\UmodelExport\\Game\\Characters\\Player\\Male\\XLarge\\Bodies\\M_XLG_Jim_01\\Textures\\T_M_LRG_Jim_Helmet_n.tga
+map_Kd C:\\Users\\coope\\Downloads\\umodel\\UmodelExport\\Game\\Characters\\Player\\Male\\XLarge\\Bodies\\M_XLG_Jim_01\\Textures\\T_M_LRG_Jim_Helmet_d.tga
