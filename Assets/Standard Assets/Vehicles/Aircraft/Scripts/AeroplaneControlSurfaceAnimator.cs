@@ -19,7 +19,7 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
             // Store the original local rotation of each surface, so we can rotate relative to this
             foreach (var surface in m_ControlSurfaces)
             {
-                surface.originalLocalRotation = surface.transform.localRotation;
+
             }
         }
 
@@ -34,21 +34,21 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
                         {
                             // Ailerons rotate around the x axis, according to the plane's roll input
                             Quaternion rotation = Quaternion.Euler(surface.amount*m_Plane.RollInput, 0f, 0f);
-                            RotateSurface(surface, rotation);
+                    
                             break;
                         }
                     case ControlSurface.Type.Elevator:
                         {
                             // Elevators rotate negatively around the x axis, according to the plane's pitch input
                             Quaternion rotation = Quaternion.Euler(surface.amount*-m_Plane.PitchInput, 0f, 0f);
-                            RotateSurface(surface, rotation);
+                         
                             break;
                         }
                     case ControlSurface.Type.Rudder:
                         {
                             // Rudders rotate around their y axis, according to the plane's yaw input
                             Quaternion rotation = Quaternion.Euler(0f, surface.amount*m_Plane.YawInput, 0f);
-                            RotateSurface(surface, rotation);
+                       
                             break;
                         }
                     case ControlSurface.Type.RuddervatorPositive:
@@ -57,7 +57,7 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
                             // around their z axis by a combination of the yaw and pitch input
                             float r = m_Plane.YawInput + m_Plane.PitchInput;
                             Quaternion rotation = Quaternion.Euler(0f, 0f, surface.amount*r);
-                            RotateSurface(surface, rotation);
+                      
                             break;
                         }
                     case ControlSurface.Type.RuddervatorNegative:
@@ -65,7 +65,7 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
                             // ... and because ruddervators are "special", we need a negative version too. >_<
                             float r = m_Plane.YawInput - m_Plane.PitchInput;
                             Quaternion rotation = Quaternion.Euler(0f, 0f, surface.amount*r);
-                            RotateSurface(surface, rotation);
+                    
                             break;
                         }
                 }

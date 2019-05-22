@@ -13,29 +13,32 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
 
         // reference to the aeroplane that we're controlling
         private AeroplaneController m_Aeroplane;
-
+        public bool enabled;
 
         private void Awake()
         {
             // Set up the reference to the aeroplane controller.
             m_Aeroplane = GetComponent<AeroplaneController>();
+            enabled = false;
         }
 
 
         private void FixedUpdate()
-        {
-            // Read input for the pitch, yaw, roll and throttle of the aeroplane.
-            float roll = CrossPlatformInputManager.GetAxis("Horizontal");
-            float pitch = CrossPlatformInputManager.GetAxis("Vertical");
-            bool airBrakes = CrossPlatformInputManager.GetButton("Fire1");
+        {   if (enabled == true)
+            {              // Read input for the pitch, yaw, roll and throttle of the aeroplane.
+                float roll = CrossPlatformInputManager.GetAxis("Horizontal");
+                float pitch = CrossPlatformInputManager.GetAxis("Vertical");
+                bool airBrakes = CrossPlatformInputManager.GetButton("Fire1");
+                print("lol plane cool");
 
-            // auto throttle up, or down if braking.
-            float throttle = airBrakes ? -1 : 1;
+                // auto throttle up, or down if braking.
+                float throttle = airBrakes ? -1 : 1;
 #if MOBILE_INPUT
-            AdjustInputForMobileControls(ref roll, ref pitch, ref throttle);
+                        AdjustInputForMobileControls(ref roll, ref pitch, ref throttle);
 #endif
-            // Pass the input to the aeroplane
-            m_Aeroplane.Move(roll, pitch, 0, throttle, airBrakes);
+                // Pass the input to the aeroplane
+                m_Aeroplane.Move(roll, pitch, 0, throttle, airBrakes);
+            }
         }
 
 
