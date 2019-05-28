@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 348}
   m_MaxSize: {x: 12008, y: 8048}
   vertical: 0
-  controlID: 7622
+  controlID: 7307
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,7 +163,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: bafbffffd6fbffffba220000
+      m_ExpandedIDs: d6fbffff9c220000ca220000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -211,7 +211,7 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 348}
   m_MaxSize: {x: 4004, y: 8048}
   vertical: 1
-  controlID: 7623
+  controlID: 7279
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -272,9 +272,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 21.965431, y: 2.6176953, z: 22.25366}
+    m_Target: {x: 3.426994, y: 1.3802521, z: 17.57611}
     speed: 2
-    m_Value: {x: 21.965431, y: 2.6176953, z: 22.25366}
+    m_Value: {x: 3.426994, y: 1.3802521, z: 17.57611}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -302,13 +302,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.012017303, y: -0.6195997, z: 0.009487157, w: -0.78476864}
+    m_Target: {x: -0.107164286, y: -0.6759373, z: 0.10029939, w: -0.7221944}
     speed: 2
-    m_Value: {x: -0.012017303, y: -0.6195997, z: 0.009487157, w: -0.78476864}
+    m_Value: {x: -0.107164286, y: -0.6759373, z: 0.10029939, w: -0.7221944}
   m_Size:
-    m_Target: 44.461056
+    m_Target: 4.042856
     speed: 2
-    m_Value: 44.461056
+    m_Value: 4.042856
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -343,7 +343,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 215
     y: 73
-    width: 1141
+    width: 1140
     height: 570
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &9
@@ -474,20 +474,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Standard Assets/Vehicles/Aircraft/Scripts
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Standard Assets/Vehicles/Aircraft/Scripts
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Owner\Desktop\fortniterealripoff\credlus-fortnite2.0
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 352}
-    m_SelectedIDs: f20d0000
-    m_LastClickedID: 3570
-    m_ExpandedIDs: 00000000940c0000601100008c110000a0130000281500003c150000401500009e15000038170000b81a00008a1c00007c1d0000281f000004200000ee410000f0410000f2410000f441000000ca9a3b
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: 940c0000
+    m_LastClickedID: 3220
+    m_ExpandedIDs: 00000000940c0000601100008c110000a0130000281500003c150000401500009e1500004a170000ca1a00009c1c00008e1d00003a1f0000162000001245000014450000164500001845000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -515,7 +515,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000940c0000601100008c110000a0130000281500003c150000401500009e15000038170000b81a00008a1c00007c1d0000281f000004200000ee410000f0410000f2410000f441000000ca9a3b
+    m_ExpandedIDs: 00000000940c0000601100008c110000a0130000281500003c150000401500009e1500004a170000ca1a00009c1c00008e1d00003a1f0000162000001245000014450000164500001845000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -540,8 +540,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: ba220000
-    m_LastClickedInstanceID: 8890
+    m_SelectedInstanceIDs: 76970000
+    m_LastClickedInstanceID: 38774
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000e8510000f61100002e110000742f0000b83000000000000010110000183800000e420000
     m_RenameOverlay:
