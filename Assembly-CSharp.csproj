@@ -63,6 +63,7 @@
     <Compile Include="Assets\Build.cs" />
     <Compile Include="Assets\buttonbig.cs" />
     <Compile Include="Assets\CarBehavior.cs" />
+    <Compile Include="Assets\floorbig.cs" />
     <Compile Include="Assets\manage1.cs" />
     <Compile Include="Assets\Moveto.cs" />
     <Compile Include="Assets\movetoplace.cs" />

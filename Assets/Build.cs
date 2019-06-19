@@ -14,9 +14,11 @@ public class Build : MonoBehaviour
     public GameObject gun4;
     public bool holdingObject = false;
     private GameObject newObject;
+    public AudioSource Pickup;
     // Start is called before the first frame update
     void Start()
     {
+    // Pickup = gameObject.GetComponent<AudioSource>();
         gun1.SetActive(false);
         gun2.SetActive(false);
         gun3.SetActive(false);
@@ -26,38 +28,49 @@ public class Build : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1) && gun1.active == false)
         {
             gun1.SetActive(true);
             gun2.SetActive(false);
             gun3.SetActive(false);
             gun4.SetActive(false);
+            Pickup.Play();
         }
-
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        else if (Input.GetKeyDown(KeyCode.Alpha1) && gun1.active == true)
+            gun1.SetActive(false);
+        if (Input.GetKeyDown(KeyCode.Alpha2) && gun2.active == false)
         {
             gun1.SetActive(false);
             gun2.SetActive(true);
             gun3.SetActive(false);
             gun4.SetActive(false);
+            Pickup.Play();
         }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
+        else if (Input.GetKeyDown(KeyCode.Alpha2) && gun2.active == true)
+            gun2.SetActive(false);
+        if (Input.GetKeyDown(KeyCode.Alpha3) && gun3.active == false)
         {
 
             gun1.SetActive(false);
             gun2.SetActive(false);
             gun3.SetActive(true);
             gun4.SetActive(false);
+            Pickup.Play();
         }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
+        else if (Input.GetKeyDown(KeyCode.Alpha3) && gun3.active == true)
+            gun3.SetActive(false);
+        if (Input.GetKeyDown(KeyCode.Alpha4) && gun4.active == false)
         {
 
             gun1.SetActive(false);
             gun2.SetActive(false);
             gun3.SetActive(false);
             gun4.SetActive(true);
+            Pickup.Play();
         }
-        if (Input.GetKeyDown(KeyCode.F1) || Input.GetKeyDown(KeyCode.F2) || Input.GetKeyDown(KeyCode.F3) && !holdingObject)
+        else if (Input.GetKeyDown(KeyCode.Alpha4) && gun4.active == true)
+            gun4.SetActive(false);
+        if ((Input.GetKeyDown(KeyCode.F1) || Input.GetKeyDown(KeyCode.F2) || Input.GetKeyDown(KeyCode.F3)) && !holdingObject)
         {
             Vector3 newPos = new Vector3((int)transform.position.x, (int)transform.position.y, (int)transform.position.z);
             if (Input.GetKeyDown(KeyCode.F1))
@@ -76,7 +89,7 @@ public class Build : MonoBehaviour
 
             holdingObject = true;
         }
-        else if (Input.GetKeyDown(KeyCode.F1) && holdingObject)
+        else if ((Input.GetKeyDown(KeyCode.F1) || Input.GetKeyDown(KeyCode.F2) || Input.GetKeyDown(KeyCode.F3)) && holdingObject)
         {
             Destroy(newObject);
             holdingObject = false;
